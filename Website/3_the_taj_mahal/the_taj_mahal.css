@@ -1,0 +1,64 @@
+body {
+  background: linear-gradient(to top, #FFFDD0, #ffffff);
+}
+
+#topnav {
+  background-color: #1C82AD;
+  overflow: hidden;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 1;
+}
+
+#topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1vw;
+  top:0
+}	
+
+#topnav a:hover {
+  background-color: #00337C;
+  color: white;
+}
+
+#topnav a.active {
+  background-color: #03C988;
+  color: white;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+* {
+  box-sizing: border-box;
+}
+
+/* CSS for columns */
+.column {
+  float: left;
+  width: 30%;
+  margin-left: 3%;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}

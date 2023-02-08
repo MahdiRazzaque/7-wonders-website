@@ -1,0 +1,76 @@
+body {
+  background: linear-gradient(to top, #FFFDD0, #ffffff);
+}
+
+#topnav {
+  background-color: #1C82AD;
+  overflow: hidden;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 1;
+}
+
+#topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1vw;
+top:0
+}	
+
+#topnav a:hover {
+  background-color: #00337C;
+  color: white;
+}
+
+#topnav a.active {
+  background-color: #03C988;
+  color: white;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+/*CSS for animated text*/
+.animate-charcter
+{
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 50px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}

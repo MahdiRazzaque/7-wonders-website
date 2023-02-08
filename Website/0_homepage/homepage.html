@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+
+<!-- https://colorhunt.co/palette/13005a00337c1c82ad03c988 -->
+<!-- Hosted on server http://132.145.69.244:8080/0_homepage/homepage.html -->
+<html>
+<link href="homepage.css" rel="stylesheet">
+<head>
+	<title>7 Wonders</title>
+  <link rel="icon" type="image/x-icon" href="./page_icon.ico">
+
+	<style>
+		body {font-family: arial, "sans-serif";}
+	</style>
+</head>
+
+<body>
+
+<!-- HTML for the navigation bar -->
+<div id="topnav">
+  <a class="active" href="homepage.html">Home</a>
+  <a href="../1_the_colosseum/the_colosseum.html">The Colosseum</a>
+  <a href="../2_the_great_wall_of_china/the_great_wall_of_china.html">The Great Wall of China</a>
+  <a href="../3_the_taj_mahal/the_taj_mahal.html">The Taj Mahal</a>
+  <a href="../4_christ_the_redeemer/christ_the_redeemer.html">Christ the Redeemer</a>
+  <a href="../5_machu_picchu/machu_picchu.html">Machu Picchu</a>
+  <a href="../6_chichen_itza/chichen_itza.html">Chichén Itzá</a>
+  <a href="../7_petra/petra.html">Petra</a>
+  <a href="../8_feedback/feedback.html">Feedback</a>
+</div>
+
+<img src="./images/7_wonders_logo.png" style="width:50%;float:left;margin-top:10%;">
+
+<!--HTML for slideshow -->
+
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 7</div>
+      <img id ="img" src="./images/the_colosseum.webp" style="width:50%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 7</div>
+      <img src="./images/the_great_wall_of_china.webp" style="width:50%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 7</div>
+      <img src="./images/the_taj_mahal.webp" style="width:50%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">4 / 7</div>
+      <img src="./images/christ_the_redeemer.jpg" style="width:50%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 7</div>
+      <img src="./images/machu_picchu.jpg" style="width:50%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">6 / 7</div>
+      <img src="./images/chichen_itza.webp" style="width:50%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">7 / 7</div>
+      <img src="./images/petra.jpg" style="width:50%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  <div id="caption-container">
+    <p id="caption">The Colosseum</p>
+  </div>
+</div>
+
+
+<p style="font-size:25px; padding:3%; background-color: #66ccff; text-align: center;">The Seven Wonders of the World is a list of iconic architectural and engineering marvels that were recognized as such during ancient times. These structures were considered to be the most impressive feats of human ingenuity and creativity, and were celebrated for their beauty, grandeur, and technological advancements. </p>
+<p style="font-size:25px; padding:3%; background-color: #66ccff; text-align: center;">The new Seven Wonders of the World are The Colosseum, The Great Wall of China, The Taj Mahal, Christ the Redeemer, Machu Picchu, Chichén Itzá and Petra.</p>
+<p style="font-size:25px; padding:3%; background-color: #66ccff; text-align: center;">Despite their destruction, the Seven Wonders of the World continue to fascinate and inspire people to this day. They represent the pinnacle of human achievement and are a testament to the enduring power of human curiosity, creativity, and determination. They also serve as a reminder of the fragility of human civilization, and how even the most impressive structures can ultimately be lost to the ravages of time.</p>
+<p style="font-size:25px; padding:3%; background-color: #66ccff; text-align: center;" >The Seven Wonders of the World are also a source of great historical and cultural significance, as they provide a glimpse into the past and reveal the beliefs, values, and technologies of the ancient cultures that built them. They also serve as an inspiration for modern architects, engineers, and builders, who strive to create structures that are similarly impressive and enduring.</p>
+<p style="font-size:25px; padding:3%; background-color: #66ccff; text-align: center;" >In summary, the Seven Wonders of the World are a list of ancient architectural and engineering marvels that were recognized for their beauty, grandeur, and technological advancements. They continue to fascinate and inspire people to this day and serve as a reminder of the fragility of human civilization. They are also a source of great historical and cultural significance, providing insight into the past and inspiring modern architects and engineers.</p></p>
+  
+<script>
+//Javascript to make the navigation bar sticky
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("topnav");
+
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+
+setInterval(() => {
+  plusSlides(1)
+}, 5000)
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let captionText = document.getElementById("caption");
+
+  switch(n) {
+    case 0:
+      captionText.innerHTML = "Petra"
+    break;
+    case 1:
+      captionText.innerHTML = "The Colosseum"
+    break;
+    case 2:
+      captionText.innerHTML = "The Great Wall of China"
+    break;
+    case 3:
+      captionText.innerHTML = "The Taj Mahal"
+    break;
+    case 4:
+      captionText.innerHTML = "Christ the Redeemer"
+    break;
+    case 5:
+      captionText.innerHTML = "Machu Picchu"
+    break;
+    case 6:
+      captionText.innerHTML = "Chichén Itzá"
+    break;
+    case 7:
+      captionText.innerHTML = "Petra"
+    break;
+    case 8:
+      captionText.innerHTML = "The Colosseum"
+    break;
+
+  }
+
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+
+  slides[slideIndex-1].style.display = "block";
+  }
+</script>
+</body>
+</html>

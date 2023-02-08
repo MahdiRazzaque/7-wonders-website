@@ -1,0 +1,96 @@
+body {
+  background: linear-gradient(to top, #FFFDD0, #ffffff);
+}
+
+#topnav {
+  background-color: #1C82AD;
+  overflow: hidden;
+  z-index: 1;
+}
+
+#topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1vw;
+}	
+
+#topnav a:hover {
+  background-color: #00337C;
+  color: white;
+}
+
+#topnav a.active {
+  background-color: #03C988;
+  color: white;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+.dropdown {
+  position: relative;
+  margin-top: 1%;
+  text-align: center;
+}
+
+.dropdown-content {
+  margin-top: 8.5%;
+  display: none;
+  position: absolute;
+  font-size: 40px;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 2;
+  margin-top: 13%;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Morping text CSS */
+@import url("https://fonts.googleapis.com/css?family=Raleway:900&display=swap");
+
+body {
+    margin: 0px;
+}
+
+#container {
+    position: absolute;
+    margin: auto;
+    width: 100vw;
+    height: 80pt;
+    top: 0;
+    bottom: 0;
+    filter: url(#threshold) blur(0.6px);
+}
+
+#text1,
+#text2 {
+    position: absolute;
+    width: 100%;
+    display: inline-block;
+
+    font-family: "Raleway", sans-serif;
+    font-size: 80pt;
+
+    text-align: center;
+
+    user-select: none;
+}

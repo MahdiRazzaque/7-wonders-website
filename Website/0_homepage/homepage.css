@@ -1,0 +1,135 @@
+body {
+  background: linear-gradient(to top, #FFFDD0, #ffffff);
+}
+
+/*Designs the navigation bar*/
+#topnav {
+  background-color: #1C82AD;
+  overflow: hidden;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 1;
+}
+
+#topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1vw;
+top:0
+}	
+
+#topnav a:hover {
+  background-color: #00337C;
+  color: white;
+}
+
+#topnav a.active {
+  background-color: #03C988;
+  color: white;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  position: relative;
+}
+
+/*External CSS for slideshow*/
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev {
+  right: 47.7%;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  right: 47.5%;
+}
+
+#caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 1% 22%;
+  color: white;
+  margin-left: 50%;
+  margin-right: 0;
+  white-space: nowrap;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+  

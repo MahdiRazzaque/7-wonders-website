@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html>
+<link href="petra.css" rel="stylesheet">
+<head>
+	<title>Petra</title>
+  <link rel="icon" type="image/x-icon" href="https://img.icons8.com/external-vitaliy-gorbachev-lineal-color-vitaly-gorbachev/60/null/external-petra-wonder-of-the-world-vitaliy-gorbachev-lineal-color-vitaly-gorbachev.png">
+	
+	<style>
+		body {font-family: arial, "sans-serif";}
+	</style>
+</head>
+
+<body>
+
+<div id="topnav">
+  <a href="../0_homepage/homepage.html">Home</a>
+  <a href="../1_the_colosseum/the_colosseum.html">The Colosseum</a>
+  <a href="../2_the_great_wall_of_china/the_great_wall_of_china.html">The Great Wall of China</a>
+  <a href="../3_the_taj_mahal/the_taj_mahal.html">The Taj Mahal</a>
+  <a href="../4_christ_the_redeemer/christ_the_redeemer.html">Christ the Redeemer</a>
+  <a href="../5_machu_picchu/machu_picchu.html">Machu Pichu</a>
+  <a href="../6_chichen_itza/chichen_itza.html">Chichén Itzá</a>
+  <a class="active" href="petra.html">Petra</a>
+  <a href="../8_feedback/feedback.html">Feedback</a>
+</div>
+
+
+<p style="font-size: 35px; padding: 3%; background-color: #66ccff; text-align: center;">Petra is an ancient city located in present-day Jordan. It is known for its rock-cut architecture and is considered one of the most important archaeological sites in the Middle East. The site was named a UNESCO World Heritage Site in 1985 and is often referred to as the "Rose City" because of the color of the stone from which it is carved.</p>
+
+<!--HTML for information box-->
+<div style="margin-top: 5%; text-align: center; padding:2% 3% 35%; background-color: #66ccff;">
+  <h1 style="text-align: right; font-size: 70px;">General Information</h1>
+  <p style=" font-size:2.4vw; float:right; width:50%; text-align: right;">Petra is a complex of structures carved into the rock, including temples, tombs, and residential areas. The site covers an area of around 264 square kilometers and is believed to have been inhabited as early as the 4th century BC. The most famous structure at Petra is the Treasury, a temple that is carved into the rock face and is adorned with intricate carvings and sculptures.</p>
+  <img src="./images/petra_1.webp" style="float: left; width: 40%; margin-top:-1%;">
+</div>
+
+<div style="margin-top: 5%; text-align: center; padding:2% 3% 35%; background-color: #66ccff;">
+  <h1 style="text-align: left; font-size: 70px;">History</h1>
+  <p style=" font-size:2.35vw; float:left; width:50%; text-align: left;">Petra was established as a city by the Nabataean Arabs in the 4th century BC. The Nabataeans were a nomadic tribe that controlled trade routes in the region and Petra became an important center for trade and commerce. The city reached its peak in the 1st century AD, but it was eventually abandoned after the Roman conquest in 106 AD. The site was rediscovered in 1812 by a Swiss explorer.</p>
+  <img src="./images/petra_2.jpg" style="float: right; width: 40%; margin-top: 1%;">
+</div>
+
+<div style="margin-top: 5%; text-align: center; padding:2% 3% 43%; background-color: #66ccff;">
+  <h1 style="text-align: right; font-size: 70px;">Build</h1>
+  <p style=" font-size:2.35vw; float:right; width:50%;text-align: right;">Petra's buildings are built primarily of sandstone, a soft rock that can be easily carved. The Nabataeans employed a technique known as "ashlar," which involved shaping large stone blocks to fit together perfectly without the use of mortar. The city is known for its elaborate rock-cut architecture, which includes temples, tombs, and residential areas. The most famous structure at Petra is the Treasury, a temple that is carved into the rock face and is adorned with intricate carvings and sculptures.</p>
+  <img src="./images/petra_3.jpg" style="float: left; width: 40%; margin-top: 3%;">
+</div>
+
+<div style="margin-top: 5%; text-align: center; padding:2% 3% 40%; background-color: #66ccff;">
+  <h1 style="text-align: left; font-size: 70px;">Fun facts</h1>
+  <ul style=" font-size:2.37vw; float:left; width:50%; text-align: left;">
+    <li>Petra is also known as the "Rose City" because of the color of the stone from which it is carved.</li>
+    <li>Petra was the capital of the Nabataean Arab kingdom between 400 BC and 106 AD./li>
+    <li>Petra was rediscovered in 1812 by Swiss explorer Johann Ludwig Burckhardt.</li>
+    <li>The Treasury, also known as Al-Khazneh, is the most famous structure at Petra and is carved into the rock face.</li>
+    <li>Petra was named as one of the New Seven Wonders of the World in 2007.</li>
+  </ul>
+  <img src="./images/petra_4.jpg" style="float: right; width: 40%; margin-top: 6%;">
+</div>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("topnav");
+
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+</body>
+</html>

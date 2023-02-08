@@ -1,0 +1,86 @@
+body {
+  background: linear-gradient(to top, #FFFDD0, #ffffff);
+}
+
+#topnav {
+  background-color: #1C82AD;
+  overflow: hidden;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 1;
+}
+
+#topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1vw;
+  top:0;
+}	
+
+#topnav a:hover {
+  background-color: #00337C;
+  color: white;
+}
+
+#topnav a.active {
+  background-color: #03C988;
+  color: white;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+/* CSS for buttons */
+.button {
+  border: none;
+  color: white;
+  padding: 4% 8%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  border: 2px solid #03C988;
+  margin-right: 4.5%;
+}
+
+.button:hover {
+  background-color: #03C988;
+  color: white;
+}
+
+/* CSS for dropdowns */
+#general_information {
+  display: block;
+}
+
+#history {
+  display: none;
+}
+
+#build {
+  display: none;
+}
+
+#fun_facts {
+  display: none;
+}

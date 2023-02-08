@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<link href="chichen_itza.css" rel="stylesheet">
+<head>
+	<title>Chichén Itzá</title>
+  <link rel="icon" type="image/x-icon" href="https://img.icons8.com/external-wanicon-flat-wanicon/64/null/external-chichen-itza-landmark-wanicon-flat-wanicon.png">
+	
+	<style>
+		body {font-family: arial, "sans-serif";}
+	</style>
+</head>
+
+<body>
+
+<div id="topnav">
+  <a href="../0_homepage/homepage.html">Home</a>
+  <a href="../1_the_colosseum/the_colosseum.html">The Colosseum</a>
+  <a href="../2_the_great_wall_of_china/the_great_wall_of_china.html">The Great Wall of China</a>
+  <a href="../3_the_taj_mahal/the_taj_mahal.html">The Taj Mahal</a>
+  <a href="../4_christ_the_redeemer/christ_the_redeemer.html">Christ the Redeemer</a>
+  <a href="../5_machu_picchu/machu_picchu.html">Machu Pichu</a>
+  <a class="active" href="chichen_itza.html">Chichén Itzá</a>
+  <a href="../7_petra/petra.html">Petra</a>
+  <a href="../8_feedback/feedback.html">Feedback</a>
+</div>
+
+<p style="font-size: 35px; padding: 3%; background-color: #66ccff; text-align: center;">Chichen Itza is an ancient Mayan city located in the Yucatan Peninsula of Mexico. It is one of the most visited archaeological sites in Mexico and is considered one of the most important examples of Mayan architecture. The site was declared a UNESCO World Heritage Site in 1988 and was named one of the New Seven Wonders of the World in 2007.</p>
+
+<!--HTML for information box-->
+<div style="margin-top: 5%; text-align: center; padding:2% 3% 5%; background-color: #66ccff;">
+  <h1 style="text-align: right; font-size: 70px;">General Information</h1>
+  <p style=" font-size:2.3vw; float:right; width:50%; text-align: right;">Chichen Itza was a major religious and political center of the ancient Mayans. It was built between the 7th and 10th centuries AD, and at its height, it had a population of over 50,000 people. The site covers an area of around 4 square miles and includes many impressive architectural structures such as the Temple of Kukulkan, the Great Ball Court, and the Temple of the Warriors.</p>
+  <!-- <img src="./images/chichen_Itza_1.jpg" style="float: left; width: 40%; margin-top:-5%;"> -->
+  <div style="margin-top: -8%; margin-left: -3%;">
+  <iframe width="40%" height="720" src="https://www.youtube.com/embed/zJCrrTk-dLQ" title="Inside Chichén Itzá - 360 | National Geographic" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </div>
+</div>
+
+<div style="margin-top: 5%; text-align: center; padding:2% 3% 32%; background-color: #66ccff;">
+  <h1 style="text-align: left; font-size: 70px;">History</h1>
+  <p style=" font-size:2.4vw; float:left; width:50%; text-align: left;">The history of Chichen Itza is closely tied to the history of the Mayan civilization, which flourished in the region between 250 and 900 AD. The city was a major religious and political center, and it reached its height during the Terminal Classic period (800-900 AD). The city was eventually abandoned, and the site was rediscovered in the 19th century.</p>
+  <img src="./images/chichen_Itza_3.jpg" style="float: right; width: 40%; margin-top: 1.5%;">
+</div>
+
+<div style="margin-top: 5%; text-align: center; padding:2% 3% 36%; background-color: #66ccff;">
+  <h1 style="text-align: right; font-size: 70px;">Build</h1>
+  <p style=" font-size:2.34vw; float:right; width:50%;text-align: right;">Chichen Itza was built using a combination of stone and plaster. The structures were constructed using a technique called corbelling, which involved laying each successive layer of stone slightly inward to create a step-like structure. Many structures at Chichen Itza also feature complex carvings and sculptures. The most notable structure at Chichen Itza is the Temple of Kukulkan, a step pyramid that is over 30 meters tall.</p>
+  <img src="./images/chichen_Itza_2.jpg" style="float: left; width: 40%; margin-top: 1.5%;">
+</div>
+
+<div style="margin-top: 5%; text-align: center; padding:2% 3% 45%; background-color: #66ccff;">
+  <h1 style="text-align: left; font-size: 70px;">Fun facts</h1>
+  <ul style=" font-size:2.3vw; float:left; width:50%; text-align: left;">
+    <li>Chichen Itza was a major religious and political center of the Mayan civilization.</li>
+    <li>The Temple of Kukulkan, also known as El Castillo, is the most iconic structure at the site.</li>
+    <li>During the spring and autumn equinox, the sun creates the illusion of a serpent descending the steps of the Temple of Kukulkan.</li>
+    <li>The Great Ball Court is the largest ball court in Mesoamerica and it is where the Mesoamerican ballgame was played.</li>
+    <li>Chichen Itza was named one of the New Seven Wonders of the World in 2007.</li>
+  </ul>
+  <img src="./images/chichen_Itza_4.jpg" style="float: right; width: 40%; margin-top: 7%;">
+</div>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("topnav");
+
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+</body>
+</html>

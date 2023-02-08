@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html>
+  <link href="feedback.css" rel="stylesheet" />
+  <head>
+    <title>Feedback</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://img.icons8.com/color/48/null/satisfied.png"
+    />
+
+    <style>
+      body {
+        font-family: arial, "sans-serif";
+      }
+    </style>
+  </head>
+
+  <script src="./popup.js"></script>
+
+  <body>
+    <div id="topnav">
+      <a href="../0_homepage/homepage.html">Home</a>
+      <a href="../1_the_colosseum/the_colosseum.html">The Colosseum</a>
+      <a href="../2_the_great_wall_of_china/the_great_wall_of_china.html"
+        >The Great Wall of China</a
+      >
+      <a href="../3_the_taj_mahal/the_taj_mahal.html">The Taj Mahal</a>
+      <a href="../4_christ_the_redeemer/christ_the_redeemer.html"
+        >Christ the Redeemer</a
+      >
+      <a href="../5_machu_picchu/machu_picchu.html">Machu Pichu</a>
+      <a href="../6_chichen_itza/chichen_itza.html">Chichén Itzá</a>
+      <a href="../7_petra/petra.html">Petra</a>
+      <a class="active" href="feedback.html">Feedback</a>
+    </div>
+
+    <!--HTML for form-->
+    <div class="container">
+      <div class="text">Contact us</div>
+      <form id="myForm" onsubmit="event.preventDefault();showPopup()">
+        <div class="form-row">
+          <div class="input-data">
+            <input type="text" required />
+            <div class="underline"></div>
+            <label for="">First Name</label>
+          </div>
+          <div class="input-data">
+            <input type="text" required />
+            <div class="underline"></div>
+            <label for="">Last Name</label>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="input-data">
+            <input type="text" required />
+            <div class="underline"></div>
+            <label for="">Email Address</label>
+          </div>
+          <div class="input-data">
+            <input type="text" required />
+            <div class="underline"></div>
+            <label for="">Wonder visited</label>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="input-data textarea">
+            <textarea rows="8" cols="80" required></textarea>
+            <br />
+            <div class="underline"></div>
+            <label for="">Write your message</label>
+            <br />
+            <div class="form-row submit-btn">
+              <div class="input-data">
+                <div class="inner"></div>
+                <input type="submit" value="Submit" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <script>
+      window.onscroll = function () {
+        myFunction();
+      };
+
+      var navbar = document.getElementById("topnav");
+
+      var sticky = navbar.offsetTop;
+
+      function myFunction() {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add("sticky");
+        } else {
+          navbar.classList.remove("sticky");
+        }
+      }
+
+      //Javascript for form
+      function clearForm() {
+        var inputs = document.querySelectorAll(
+          "#myForm input, #myForm textarea"
+        );
+
+        for (var i = 0; i < inputs.length; i++) {
+          if (!inputs[i].value) {
+            return false;
+          }
+        }
+
+        inputs.forEach(function (input) {
+          if (input.value == "Submit") return;
+          input.value = "";
+        });
+
+        return true;
+      }
+
+      function showPopup() {
+        if (clearForm()) {
+          Swal.fire({
+            title: "Success",
+            text: "Your response has been recorded",
+            icon: "success",
+            confirmButtonText: "Close",
+          });
+        }
+      }
+    </script>
+  </body>
+</html>

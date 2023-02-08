@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html>
+<link href="machu_picchu.css" rel="stylesheet">
+<head>
+	<title>Machu Pichu</title>
+  <link rel="icon" type="image/x-icon" href="https://img.icons8.com/external-vitaliy-gorbachev-lineal-color-vitaly-gorbachev/60/null/external-machu-picchu-wonder-of-the-world-vitaliy-gorbachev-lineal-color-vitaly-gorbachev.png">
+	
+	<style>
+		body {font-family: arial, "sans-serif";}
+	</style>
+</head>
+
+<body>
+
+<div id="topnav">
+  <a href="../0_homepage/homepage.html">Home</a>
+  <a href="../1_the_colosseum/the_colosseum.html">The Colosseum</a>
+  <a href="../2_the_great_wall_of_china/the_great_wall_of_china.html">The Great Wall of China</a>
+  <a href="../3_the_taj_mahal/the_taj_mahal.html">The Taj Mahal</a>
+  <a href="../4_christ_the_redeemer/christ_the_redeemer.html">Christ the Redeemer</a>
+  <a class="active" href="machu_picchu.html">Machu Pichu</a>
+  <a href="../6_chichen_itza/chichen_itza.html">Chichén Itzá</a>
+  <a href="../7_petra/petra.html">Petra</a>
+  <a href="../8_feedback/feedback.html">Feedback</a>
+</div>
+
+<p style="font-size: 35px; padding: 3%; background-color: #66ccff; text-align: center;">Machu Picchu is a 15th-century Inca citadel located in the Cusco Region of Peru. The site is situated on a mountain ridge above the Urubamba Valley and is often referred to as the "Lost City of the Incas." It is considered one of the most important archaeological sites in South America and is a UNESCO World Heritage Site.</p>
+
+<!--HTML for buttons-->
+<button class="button" type="button" style="margin-left: 3%;" onclick="showHide(`general_information`)">General Information</button>
+<button class="button" type="button" onclick="showHide(`history`)">History</button>
+<button class="button" type="button" onclick="showHide(`build`)">Build</button>
+<button class="button" type="button" style="margin-right: 0%" onclick="showHide(`fun_facts`)">Fun facts</button>
+
+<!--HTML for dropdowns-->
+<div id= "general_information" style="margin-top: 5%; text-align: center; padding:2% 3% 30%; background-color: #66ccff;">
+  <h1 style="text-align: left; font-size: 70px;">General Information</h1>
+  <p style=" font-size:2.3vw; float:left; width:50%; text-align: left;">Machu Picchu is a complex of stone structures built by the Inca Empire in the 15th century. The site covers an area of about 32,000 square meters and includes temples, palaces, and residential areas. The main structures at Machu Picchu include the Temple of the Sun, the Temple of the Three Windows, and the Intihuatana stone.</p>
+  <img src="./images/machu_picchu_1.jpg" style="float: right; width: 40%; margin-top:-5%;">
+</div>
+
+<div id= "history" style="margin-top: 5%; text-align: center; padding:2% 3% 30%; background-color: #66ccff;">
+  <h1 style="text-align: left; font-size: 70px;">History</h1>
+  <p style=" font-size:2.3vw; float:left; width:50%; text-align: left;">Machu Picchu was built by the Inca Empire in the 15th century, but the exact purpose of the site remains a mystery. Some theories suggest that it was a sacred religious site, while others believe it was a royal estate or a military fortress. The site was abandoned by the Incas during the Spanish conquest and remained hidden for centuries until it was rediscovered in 1911 by Hiram Bingham.</p>
+  <img src="./images/machu_picchu_3.webp" style="float: right; width: 40%; margin-top: 1.5%;">
+</div>
+
+<div id= "build" style="margin-top: 5%; text-align: center; padding:2% 3% 30%; background-color: #66ccff;">
+  <h1 style="text-align: left; font-size: 70px;">Build</h1>
+  <p style=" font-size:2.3vw; float:left; width:50%; text-align: left;">Machu Picchu is made up of more than 150 structures, including temples, palaces, and residential areas. The structures were built using a technique known as "ashlar," which involved shaping large stone blocks to fit together perfectly without the use of mortar. The Incas also used a method of terracing to create flat areas for the buildings and to prevent erosion.</p>
+  <img src="./images/machu_picchu_2.jpg" style="float: right; width: 40%; margin-top: 1.5%;">
+</div>
+
+<div id= "fun_facts" style="margin-top: 5%; text-align: center; padding:2% 3% 45%; background-color: #66ccff;">
+  <h1 style="text-align: left; font-size: 70px;">Fun facts</h1>
+  <ul style=" font-size:2.4vw; float:left; width:50%; text-align: left;">
+    <li>Machu Picchu was never discovered by the Spanish conquistadors, and remained hidden for centuries.</li>
+    <li>The site was rediscovered in 1911 by American historian Hiram Bingham.</li>
+    <li>Machu Picchu was named as one of the New Seven Wonders of the World in 2007.</li>
+    <li>The site is believed to have been used by the Incas as a royal estate or a sacred religious site.</li>
+    <li>The site is located on a mountain ridge above the Urubamba Valley and offers stunning views of the surrounding landscape.</li>
+  </ul>
+  <img src="./images/machu_picchu_4.jfif" style="float: right; width: 40%; margin-top: 7%;">
+</div>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("topnav");
+
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+
+//Javascript for buttons
+function showHide(id) {
+  var ids = ["general_information", "history", "build", "fun_facts"]
+  for (let i = 0; i < 4; i++) {
+    if(id != ids[i]) 
+      document.getElementById(ids[i]).style.display = "none"
+  }
+
+  if(document.getElementById(id).style.display == "none" || document.getElementById(id).style.display == "") 
+    document.getElementById(id).style.display = "block"
+}
+</script>
+</body>
+</html>
